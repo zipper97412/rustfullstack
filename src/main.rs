@@ -31,7 +31,7 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for MyWs {
 
 
 #[derive(RustEmbed)]
-#[folder = "target/deploy/"]
+#[folder = "static"]
 struct Asset;
 
 #[get("/ws/")]
